@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">GestionDesNote</string>
+    <string-array name="spinnerItems">
+        <item>Math</item>
+        <item>Informatique</item>
+        <item>Securite</item>
+        <item>Reseau</item>
+    </string-array>
+</resources>

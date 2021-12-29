@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <TableLayout
+
+        android:id="@+id/infos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:layout_alignParentTop="true"
+
+        android:background="@drawable/background5"
+        >
+        <TableRow>
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:text="Module :"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/module"
+                android:layout_marginTop="30dp"
+                android:textSize="24sp"
+                android:entries="@array/spinnerItems"
+                android:spinnerMode="dropdown"
+
+                />
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:text="Note :"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/note"
+                android:textSize="24sp" />
+            <Button
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:textColor="@android:color/black"
+                android:background="@android:color/darker_gray"
+                android:textSize="24sp" />
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_marginTop="30dp"
+                android:text="Moyenne :"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_marginTop="30dp"
+                android:id="@+id/moyenne"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:text="Bulletin :"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+        </TableRow>
+
+    </TableLayout>
+
+    <ListView
+        android:id="@+id/bulletin"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_above="@id/infos"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="262dp"
+        android:layout_marginBottom="-2dp"
+        android:background="@drawable/background4" />
+</RelativeLayout>
